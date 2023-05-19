@@ -29,3 +29,25 @@ int main() {
 
     std::cout << "My name is Riley! Ruff ruff, I am " << human_years << " years old in human years.";
 }
+
+// Conditional Solution with User Input
+int main() {
+    std::string dog_name;
+    int dog_age {0};
+    int human_years {0};
+
+    std::cout << "Enter the name of your dog:\n";
+    std::cin >> dog_name;
+
+    std::cout << "Enter the age of your dog in years:\n";
+    std::cin >> dog_age;
+
+    if (dog_age <= 2) {
+        human_years = dog_age * 10.5;
+    }
+    else {
+        human_years = (dog_age - 2) * 4 + 21;
+    }
+
+    std::cout << "My name is " << dog_name << "! Ruff ruff, I am " << human_years << " years old in human years.";
+}
